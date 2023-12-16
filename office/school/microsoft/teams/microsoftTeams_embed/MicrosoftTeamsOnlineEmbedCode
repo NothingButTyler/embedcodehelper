@@ -1,0 +1,175 @@
+<!DOCTYPE html><html><head><title>checking your credentials...</title> <meta name="viewport"><meta name="robots" content="noindex" /><script type="text/javascript" src="https://statics.teams.cdn.office.net/authstrapjs/auth-js/teams_enterprise_m24.js"></script><script type="text/javascript" src="https://statics.teams.cdn.office.net/authstrapjs/auth-js/authstrap_m2_v2.js"></script>
+
+  <script nonce="pnUg84KK0/CRNTpIun+L3Q==">
+    (function () {
+      document.addEventListener("DOMContentLoaded", function () {
+         var isInIFrame = function() {
+          try {
+            return window.self !== window.top;
+          } catch(e) {
+            return true;
+          }
+        };
+        if (isInIFrame()) {
+          return;
+        }
+        var rootUri = 'https://teams.microsoft.com/';
+        if (rootUri.charAt(0) === '[') {
+          rootUri = '{SETINENVIRONMENTTRANSFORM}';
+        }
+        if (rootUri.charAt(rootUri.length - 1) !== '/') {
+          rootUri += '/';
+        }
+        var clientId = '5e3ce6c0-2b1f-4285-8d4b-75ee78787346';
+        if (clientId.charAt(0) === '[') {
+          clientId = '5e3ce6c0-2b1f-4285-8d4b-75ee78787346';
+        }
+        var redirectRoute = 'go';
+        var redirectUri = rootUri + redirectRoute;
+        var pdsRedirectRoute = '';
+        var exceptionRoutes = [redirectRoute, pdsRedirectRoute];
+        var alternateSite = 'https://teams.live.com';
+        if (alternateSite.charAt(0) === '[') {
+          alternateSite = '';
+        }
+        var instanceBase = 'https://login.microsoftonline.com/';
+        if (!instanceBase) {
+          instanceBase = 'https://login.microsoftonline.com/';
+        }
+        var audience = 'organizations';
+        if (!audience) {
+          audience = 'consumers';
+        }
+        var commonFrontDoor = "none";
+        if (alternateSite) {
+          commonFrontDoor = 'primary';
+        }
+        var secureCookie = true;
+        var enableAuthCookieStore = true;
+        var consumerMTResource = '';
+        if (audience === 'consumers') {
+          consumerMTResource = 'https://api.spaces.skype.com';
+        } else {
+          consumerMTResource = 'service::api.fl.teams.microsoft.com::MBI_SSL'
+        }
+        var instance = instanceBase + audience;
+        var prefix = 'AUTHSTRAPMSAL:MSAL.JS: ';
+        var redirectToDOMStorageErrorPage = function () {
+          window.location.assign(rootUri + 'error/DOM_storage_disabled');
+        };
+        var showDOMStorageError = function (e) {
+          console.error('AUTHSTRAPMSAL: Storage check failed');
+          redirectToErrorPage();
+        };
+        var localStorageEnabled = function() {
+          var value = 'skypeStorageTest';
+          try {
+            localStorage.setItem(value, value);
+            localStorage.removeItem(value);
+            return true;
+          } catch(e) {
+            showError(e);
+            return false;
+          }
+        };
+        if(!localStorageEnabled()) {
+          redirectToDOMStorageErrorPage();
+          return;
+        }
+        if (window.location.hash.indexOf("AADSTS90014") >= 0 &&
+          window.location.hash.indexOf("%27nonce%27") >= 0) {
+          console.warn("AUTHSTRAPMSAL: Okta workaround");
+          window.location.hash = "";
+        }
+        var redirectToErrorPage = function (e) {
+          var errorDescription = 'other';
+          if (e && e.errorCode) {
+            errorDescription = e.errorCode;
+          } else {
+            errorDescription = e.message || '';
+          }
+          window.location.assign(rootUri + 'error/oops?errorMessage=AuthstrapFailure&errorDescription=' + encodeURIComponent(errorDescription));
+        };
+        var showError = function (e) {
+          console.error('AUTHSTRAPMSAL: Error occurred logging in: ' + e);
+          redirectToErrorPage(e);
+        };
+        var tokenRenewalOffsetSeconds = 300;
+        var myMSALObj = undefined;
+        try {
+          myMSALObj = new window.msal.PublicClientApplication({
+            auth: {
+              clientId: clientId,
+              authority: instance,
+              redirectUri: redirectUri,
+              postLogoutRedirectUri: redirectUri,
+              navigateToLoginRequestUrl: false,
+              clientCapabilities: ["CP1"]
+            },
+            cache: {
+              cacheLocation: 'localStorage',
+              storeAuthStateInCookie: false
+            },
+            system: {
+                loggerOptions: {
+                    loggerCallback: (level, message, containsPii) => {
+                        if (containsPii) {
+                            return;
+                        }
+                        switch(level) {
+                            case window.msal.LogLevel.Error:
+                            console.error(prefix + message);
+                            break;
+                            case window.msal.LogLevel.Warning:
+                            console.warn(prefix + message);
+                            break;
+                            case window.msal.LogLevel.Verbose:
+                            console.debug(prefix + message);
+                            break;
+                            default:
+                            console.info(prefix + message);
+                            break;
+                        }
+                    },
+                    piiLoggingEnabled: false
+                },
+                windowHashTimeout: 60000,
+                iframeHashTimeout: 6000,
+                loadFrameTimeout: 0,
+                asyncPopups: false
+            }
+          });
+        } catch (constructorException) {
+          showError(constructorException);
+          return;
+        }
+        var authStrap = new teamspace.auth.AuthStrapMsal2(
+          myMSALObj,
+          clientId,
+          rootUri,
+          redirectUri,
+          'lastLocationHash',
+          exceptionRoutes,
+          alternateSite,
+          commonFrontDoor,
+          instanceBase,
+          audience,
+          showError,
+          'TSAUTHCOOKIE',
+          secureCookie,
+          enableAuthCookieStore,
+          'TSPREAUTHCOOKIE',
+          true,
+          'service::api.fl.spaces.skype.com::MBI_SSL',
+          consumerMTResource,
+          tokenRenewalOffsetSeconds,
+          '');
+        authStrap.handleWindow();
+      });
+    })();
+  </script>
+</head>
+<body>
+</body>
+</html>
+
