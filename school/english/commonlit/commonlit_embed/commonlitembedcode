@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="csp-nonce" content="qugh3T7IrwckW29PDJoorA==" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>Login</title>
+<meta property="og:url" content="https://www.commonlit.org/en/user/login" /><link href="https://www.commonlit.org/en/user/login" rel="canonical" />
+<link rel="alternate" href="https://www.commonlit.org/en/user/login" hreflang="en">
+<link rel="alternate" href="https://www.commonlit.org/es/user/login" hreflang="es">
+<link rel="alternate" href="https://www.commonlit.org/en/user/login" hreflang="x-default">
+
+<script nonce="qugh3T7IrwckW29PDJoorA==">
+    window.dataLayer = window.dataLayer || [];
+  </script>
+<script nonce="qugh3T7IrwckW29PDJoorA==">
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer',"GTM-WWPZTNW");
+  </script>
+
+<script nonce="qugh3T7IrwckW29PDJoorA==">
+      window.POSTHOG_API_KEY = "phc_eYOiq6v3kInH9kjV45FJ4ZpW7pm33RvStNy28DAetO6";
+    </script>
+<script src="https://assets.commonlit.org/builds/PostHog-LQ573WST.js" media="all" defer="defer" nonce="qugh3T7IrwckW29PDJoorA=="></script>
+<script nonce="qugh3T7IrwckW29PDJoorA==">
+  (function() {
+    if (typeof globalThis === 'object') return;
+    Object.prototype.__defineGetter__('__magic__', function() {
+      return this;
+    });
+    __magic__.globalThis = __magic__;
+    delete Object.prototype.__magic__;
+  }());
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=AbortController,Array.from,Array.prototype.entries,Array.prototype.fill,Array.prototype.find,Array.prototype.findIndex,Array.prototype.flat,Array.prototype.flatMap,Array.prototype.includes,Array.prototype.keys,Array.prototype.sort,Array.prototype.values,ArrayBuffer,ArrayBuffer.isView,atob,Blob,console,CustomEvent,DataView,document,Element,es5,Event,fetch,Float32Array,Float64Array,getComputedStyle,globalThis,Int16Array,Int32Array,Int8Array,Intl,JSON,localStorage,Map,Math.clz32,Math.imul,Math.sign,Math.trunc,modernizr:es6string,MutationObserver,Number.isFinite,Number.isInteger,Number.isNaN,Number.MAX_SAFE_INTEGER,Object.assign,Object.entries,Object.fromEntries,Object.getOwnPropertyDescriptors,Object.getOwnPropertySymbols,Object.is,Object.isExtensible,Object.isFrozen,Object.preventExtensions,Object.seal,Object.setPrototypeOf,Object.values,Promise,Promise.prototype.finally,queueMicrotask,Reflect,Reflect.construct,Reflect.get,RegExp.prototype.flags,requestAnimationFrame,Set,String.prototype.codePointAt,String.prototype.matchAll,String.prototype.normalize,Symbol,Symbol.for,Symbol.iterator,Symbol.prototype.description,Symbol.species,Symbol.toPrimitive,Symbol.toStringTag,TextEncoder,Uint16Array,Uint32Array,Uint8Array,Uint8ClampedArray,URL,URLSearchParams,WeakMap,WeakSet,XMLHttpRequest" nomodule="nomodule" nonce="qugh3T7IrwckW29PDJoorA=="></script>
+<script nonce="qugh3T7IrwckW29PDJoorA==">
+      window.env = "production";
+      window.locale = "en";
+      window.I18n = { t: function(_key) { return ''; } }
+    </script>
+<script src="https://assets.commonlit.org/builds/i18n-en-NHXTC64L.js" media="all" nonce="qugh3T7IrwckW29PDJoorA=="></script>
+<script src="https://assets.commonlit.org/builds/application-VVZGOV3O.js" media="all" defer="defer" nonce="qugh3T7IrwckW29PDJoorA=="></script>
+<script src="https://assets.commonlit.org/builds/defineWebComponents-AIK55KAX.js" media="all" nonce="qugh3T7IrwckW29PDJoorA=="></script>
+<link rel="preload" href="https://assets.commonlit.org/builds/montserrat-v13-latin-600-7ZX7DSHH.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://assets.commonlit.org/builds/montserrat-v13-latin-700-SZYYONRS.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://assets.commonlit.org/builds/montserrat-v13-latin-regular-VXUI6ZYK.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://assets.commonlit.org/builds/lato-v15-latin-regular-CQWWHVWB.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://assets.commonlit.org/builds/lato-v15-latin-300-NQO3JP4J.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://assets.commonlit.org/builds/latolatin-medium-2V427ILP.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://assets.commonlit.org/builds/latolatin-semibold-O7FOSXUP.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://assets.commonlit.org/builds/lato-v15-latin-700-PGGQOMTL.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://assets.commonlit.org/builds/tailwind-2V3MYHI6.css" media="all" />
+<link rel="stylesheet" href="https://assets.commonlit.org/builds/application-IA4QIMR3.css" media="all" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="CrcV5yHOcLwKuF4CrtPTNxBiFqQSctXDLnbPMSF5GFCco5Y7TG9e3t6cbCG1LWmb__SlA0jc1ewibMfm7KoiyQ" />
+<meta name="apple-mobile-web-app-title" content="CommonLit">
+<meta name="application-name" content="CommonLit">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBrPBeorke">
+<meta name="theme-color" content="#ffffff">
+<script nonce="qugh3T7IrwckW29PDJoorA==">
+  window.currentUserEmail = null
+  window.personId = null
+
+  window.SENTRY_DSN = {
+    'id': "https://d26e0415b2792e982ede0ca07fc10d24@o342790.ingest.sentry.io/1886768"
+  }
+  window.SENTRY_ENVIRONMENT = {
+    'id': "production"
+  }
+  window.SENTRY_RELEASE = {
+    'id': "c889504157"
+  }
+</script>
+<meta property="og:site_name" content="CommonLit">
+<meta property="twitter:site" content="@commonlit">
+<meta property="og:title" content="CommonLit | Login">
+<meta property="twitter:title" content="CommonLit | Login">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://cdn.commonlit.org/assets/CommonLitShare2.JPG">
+<meta property="twitter:image" content="https://cdn.commonlit.org/assets/CommonLitShare2.JPG">
+<link rel="image_src" type="image/jpeg" href="https://cdn.commonlit.org/assets/CommonLitShare2.JPG">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_US">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "CommonLit™",
+    "url": "https://www.commonlit.org",
+    "logo": "https://www.commonlit.org/logo.png",
+    "image": [
+      "https://www.commonlit.org/student1.png",
+      "https://www.commonlit.org/student2.png",
+      "https://www.commonlit.org/student3.png"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "660 Pennsylvania Ave SE",
+      "addressLocality": "Washington",
+      "addressRegion": "DC",
+      "postalCode": "20003",
+      "addressCountry": "US"
+    },
+    "contactPoint": [
+      { "@type": "ContactPoint",
+        "url": "https://www.commonlit.org/contact",
+        "email": "info@commonlit.org",
+        "contactType": "Customer Support"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/commonlit",
+      "https://instagram.com/commonlit",
+      "https://twitter.com/commonlit",
+      "https://www.linkedin.com/company/commonlit-inc-/",
+      "https://www.pinterest.com/CommonLit/",
+      "https://www.youtube.com/channel/UC9hS8sB48MlKYlXBbLalWnw"
+    ]
+  }
+</script>
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBrPBeorke">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBrPBeorke">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBrPBeorke">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBrPBeorke">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBrPBeorke">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBrPBeorke">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBrPBeorke">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBrPBeorke">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBrPBeorke">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBrPBeorke" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBrPBeorke" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBrPBeorke" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBrPBeorke">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBrPBeorke" color="#447e86">
+<link rel="shortcut icon" href="/favicon.ico?v=XBrPBeorke">
+<meta name="theme-color" content="#447e86">
+</head>
+<body class="en sessions new inner">
+<noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WWPZTNW"
+        style="display:none;visibility:hidden"
+        height="0"
+        width="0"
+      >
+      </iframe>
+    </noscript>
+<header class="main-navbar" id="main-navbar">
+<div id="TopNav" data-props="{&quot;canonicalPaths&quot;:{&quot;en&quot;:&quot;/en/user/login&quot;,&quot;es&quot;:&quot;/es/user/login&quot;},&quot;user&quot;:null,&quot;unreadNotificationsCount&quot;:0}"></div><script src="https://assets.commonlit.org/builds/TopNav-AOFEL7QM.js" media="all" defer="defer" nonce="qugh3T7IrwckW29PDJoorA=="></script> <link rel="stylesheet" href="https://assets.commonlit.org/builds/TopNav-5IA3RKGH.css" media="all" />
+<div id="fixed-top-container" class="fixed-top-container">
+<div data-test="fixed-top-portal" id="fixed-top-portal">
+</div>
+</div>
+</header>
+<div class="body-container" id="content">
+<div id="Toaster" data-props="{&quot;toasts&quot;:[]}"></div><script src="https://assets.commonlit.org/builds/Toaster-5TCDWFEM.js" media="all" defer="defer" nonce="qugh3T7IrwckW29PDJoorA=="></script> <link rel="stylesheet" href="https://assets.commonlit.org/builds/Toaster-3PJVXG3I.css" media="all" />
+<noscript>
+        <p class="noscript-warning">
+          <svg
+  aria-hidden="false"
+  class="svg-icon exclamation"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 448 512"
+>
+
+  <path d="M64 352c17.69 0 32-14.32 32-31.1V64.01c0-17.67-14.31-32.01-32-32.01S32 46.34 32 64.01v255.1C32 337.7 46.31 352 64 352zM64 400c-22.09 0-40 17.91-40 40s17.91 39.1 40 39.1s40-17.9 40-39.1S86.09 400 64 400z"/>
+
+</svg>
+
+
+          For full functionality of this site it is necessary to enable JavaScript. <a style="text-decoration: underline;" href="https://www.enable-javascript.com/" target="_blank" rel="noopener noreferrer"> Click here</a> for instructions on how to enable JavaScript in your web browser.
+        </p>
+      </noscript>
+<main class="layout-page-content ">
+<div id="LoginPage" data-props="{&quot;classlinkErrorType&quot;:null,&quot;cleverSingleSignOnUrl&quot;:&quot;https://clever.com/oauth/authorize?client_id=4af59222fbe57cc6ab9d\u0026redirect_uri=https%3A%2F%2Fwww.commonlit.org%2Fclever\u0026response_type=code\u0026state=7c86cce3-fcaf-484f-9a30-55dc0f120136&quot;,&quot;emailAddress&quot;:&quot;&quot;,&quot;googleOmniauthAuthorizePath&quot;:&quot;/auth/google_oauth2&quot;,&quot;classlinkSingleSignOnUrl&quot;:&quot;/classlink/authentication/initiate&quot;,&quot;googleOmniauthEmailHint&quot;:null,&quot;rememberable&quot;:true}"></div><script src="https://assets.commonlit.org/builds/LoginPage-OK25XKRX.js" media="all" defer="defer" nonce="qugh3T7IrwckW29PDJoorA=="></script> <link rel="stylesheet" href="https://assets.commonlit.org/builds/LoginPage-GOBSTKUG.css" media="all" />
+</main>
+<footer class="guest-footer px-0 desktopDeprecated:px-[2rem]" id="footer">
+<div class="container">
+<div class="flex flex-wrap">
+<div class="about">
+<img class="commonlit-nav-logo" alt="CommonLit Logo" src="https://assets.commonlit.org/images/COMMONLIT_LOGO_BLACK.png" />
+<p>CommonLit is a nonprofit that has everything teachers and schools need for top-notch literacy instruction: a full-year ELA curriculum, benchmark assessments, and formative data.</p>
+<div class="browse-content-link-container">
+<a class="cl-link cl-primary-btn" href="/en/library">Browse Content</a>
+</div>
+</div>
+<div class="link-groups">
+<div class="link-group">
+<h2 id="who-we-are-heading">Who We Are</h2>
+<ul class="no-list-style" aria-labelledby="who-we-are-heading">
+<li><a href="/en/about">About</a></li>
+<li><a href="/en/impact">Impact</a></li>
+<li><a href="/en/partners">Partners</a></li>
+<li><a href="/en/press">Press</a></li>
+</ul>
+</div>
+<div class="link-group">
+<h2 id="schools-districts-heading">Schools &amp; Districts</h2>
+<ul class="no-list-style" aria-labelledby="schools-districts-heading">
+<li>
+<a href="/en/school-essentials">Plans &amp; Pricing</a>
+</li>
+<li>
+<a href="/en/benchmark-assessments">Assessment Series</a>
+</li>
+<li>
+<a href="/en/ela-curriculum">CommonLit 360</a>
+</li>
+<li>
+<a href="/en/rostering-and-lms-integrations">Rostering and LMS integrations</a>
+</li>
+</ul>
+</div>
+<div class="link-group">
+<h2 id="resources-heading">Resources</h2>
+<ul class="no-list-style" aria-labelledby="resources-heading">
+<li>
+<a target="_blank" rel="noopener noreferrer" href="https://www.commonlit.org/blog">Blog</a>
+</li>
+<li>
+<a target="_blank" rel="noopener noreferrer" href="https://support.commonlit.org/hc/en-us">Frequently Asked Questions</a>
+</li>
+<li>
+<a target="_blank" rel="noopener noreferrer" href="https://info.commonlit.org/webinars">Webinar Sign-Up</a>
+</li>
+<li><a href="/en/security">Security</a></li>
+</ul>
+</div>
+<div class="link-group">
+<h2 id="get-involved-heading">Get Involved</h2>
+<ul class="no-list-style" aria-labelledby="get-involved-heading">
+<li>
+<a target="_blank" rel="noopener noreferrer" href="https://jobs.lever.co/commonlit">Careers</a>
+</li>
+<li><a href="/en/contact">Contact</a></li>
+<li><a href="/en/donate">Donate</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between flex-wrap gap-[1rem] text-[11px]">
+<div>
+&copy; 2014-2023 CommonLit. &#8482; |
+<a href="https://www.guidestar.org/profile/46-4255260" target="_blank" rel="noopener noreferrer">
+CommonLit is a 501(c)(3) non-profit organization.
+</a>
+</div>
+<ul class="no-list-style flex flex-wrap gap-x-[2rem] gap-y-[1rem] items-center">
+<li><a href="/en/accessibility">Accessibility</a></li>
+<li><a href="/en/privacy">Privacy Policy</a></li>
+<li><a href="/en/terms">Terms of Use</a></li>
+<li>
+<ul class="no-list-style flex gap-[0.5rem]">
+<li>
+<a aria-label="CommonLit on Twitter" href="https://twitter.com/CommonLit" target="_blank" rel="noopener noreferrer">
+<cl-icon icon="twitter" class="twitter-bird text-20"></cl-icon>
+</a>
+</li>
+<li>
+<a aria-label="CommonLit on Youtube" href="https://www.youtube.com/channel/UC9hS8sB48MlKYlXBbLalWnw" target="_blank" rel="noopener noreferrer">
+<cl-icon icon="youtube" class="youtube-play text-20"></cl-icon>
+</a>
+</li>
+<li>
+<a aria-label="CommonLit on Facebook" href="https://www.facebook.com/commonlit" target="_blank" rel="noopener noreferrer">
+<cl-icon icon="facebook" class="facebook text-20"></cl-icon>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+<div class="fixed-bottom-container">
+<div data-test="mobile-question-sidebar-portal" id="mobile-question-sidebar-portal"></div>
+</div>
+</div>
+<div id="controller-name" data-controller="sessions"></div>
+<div id="action-name" data-action="new"></div>
+<script nonce="qugh3T7IrwckW29PDJoorA==">
+  var commonLit = commonLit || {}
+  commonLit.zendesk = {
+    name: "",
+    email: "",
+  }
+</script>
+<script src="https://assets.commonlit.org/builds/zendesk-ZZ7MHFGE.js" media="all" defer="defer" nonce="qugh3T7IrwckW29PDJoorA=="></script>
+<script src="https://assets.commonlit.org/statusPageV2.js" async="async" nonce="qugh3T7IrwckW29PDJoorA=="></script>
+</body>
+</html>
