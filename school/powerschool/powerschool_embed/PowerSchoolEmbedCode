@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+	<head>
+		<title>
+			
+				Student and Parent Sign In
+			
+		</title>
+		<meta name="robots" content="noindex" />
+        <!-- Meta tag to show Smart App banner for iOS devices -->
+        <meta name="apple-itunes-app" content="app-id=973741088"/>
+		<link href="/images/css/screen.css" rel="stylesheet" media="screen" />
+        <link href="/images/css/print.css" rel="stylesheet" media="print" />
+		<link href="/images/css/customization.css" rel="stylesheet" type="text/css" media="screen" />
+		<meta name="viewport" content="width=device-width" />
+
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="/android-chrome-512x512.png" sizes="512x512" />
+		<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="PowerSchool"/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
+		<link rel="shortcut icon" href="/favicon.ico" >
+        
+	</head>
+	<body class="pslogin" id="pslogin">
+		<div id="container">
+            <div id="branding-district"></div>
+			<div id="content">
+                <div id="branding-powerschool"></div>
+				<h1 id="normalHeader" class="hide">
+					
+						Student and Parent Sign In
+					
+                </h1>
+				<div id="localLoginHeader" class="hide">
+					<h1 class="center">
+						PowerSchool ID Creation
+					</h1>
+					<p class="center"><strong>Step 1:&nbsp;</strong>Enter your current sign in information</p>
+				</div>
+
+                <div  class="tabs">
+                     
+							<ul id="tabs">
+                                
+                                
+		                    </ul>
+	                 
+
+	                 <div id="sign-in-content">
+	                    <form action="/guardian/home.html" method="post" name="LoginForm" target="_top" id="LoginForm" onsubmit="doPCASLogin(this);">
+                            
+                            
+
+                            <input type="hidden" name="dbpw" value="" />
+                            <input type="hidden" name="translator_username" value="" />
+                            <input type="hidden" name="translator_password" value="" />
+                            <input type="hidden" name="translator_ldappassword" value="" />
+                            <input type="hidden" name="returnUrl" value=""/>
+<input type="hidden" name="serviceName" value="PS Parent Portal"/>
+<input type="hidden" name="serviceTicket" value=""/>
+<input type="hidden" name="pcasServerUrl" value="/"/>
+<input type="hidden" name="credentialType" value="User Id and Password Credential"/>
+                            <input type=hidden name=ldappassword value=''>
+
+                            
+
+                            <script>
+	var hideLoginForm = 0;
+</script>
+
+
+                            <!--box content-->
+                             
+                                
+                                <div id="noscript" class="feedback-alert">
+	                                 To sign in to PowerSchool, you must use a browser that supports and has JavaScript enabled. 
+	                            </div>
+								<div id="login_fieldset" class="hide">
+	                            <fieldset id="login-inputs">
+                                    <legend class="screen_readers_only">Enter your Username and Password</legend>
+	                                	<div>
+		<label for="request_locale">Select Language</label>
+<select name="request_locale" id="request_locale" onchange="setPageLocale(this.options[this.selectedIndex].value)">
+<option value="en_US" selected="selected">English</option>
+<option value="es_MX">Spanish</option>
+</select>
+	</div>
+
+	                                <div>
+	                                    <label for="fieldAccount" >Username</label>
+	                                    <input type="text" id="fieldAccount" name="account" value="" size="39" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" />
+	                                </div>
+	                                <div>
+	                                    <label for="fieldPassword" >Password</label>
+	                                    <input type="password" id="fieldPassword" name="pw" value="" size="39" autocomplete="new-password" spellcheck="false" autocorrect="off" autocapitalize="off" />
+                                    </div>
+                                    <div id="translatorInput">
+                                        <label for="fieldTranslator" >Translator Sign In</label>
+                                        <input type="password" id="fieldTranslator" name="translatorpw" value="" size="39" autocomplete="new-password" spellcheck="false" autocorrect="off" autocapitalize="off" />
+                                    </div>
+                                    <div id="login-help" class="hide">
+                                        <a id = "loginHelpLink" href="/public/account_recovery_begin.html">Forgot Username or Password?</a>
+                                    </div>
+									<div class="button-row hide" id="btn-enter-sign-in-div">
+										<button type="submit" id="btn-enter-sign-in" title="Sign In To PowerSchool Public Access" value="Enter" border="0" >
+											Sign In
+										</button>
+									</div>
+									<div class="button-row hide" id="btn-enter-next-div">
+										<button type="submit" class="full-width" id="btn-enter-next" title="Sign In To PowerSchool Public Access" value="Enter" border="0" >
+											Next
+										</button>
+									</div>
+								</fieldset>
+								</div>
+
+								<div id="redirect_to_classroom" class="hide">
+									<p class="center"><strong>&mdash; Or &mdash; </strong></p>
+									<div class="button-row">
+										<button id="btn-powerschool-id" type="button" class="full-width" onClick='window.location="/guardian/home.html?_local_login=false&_userTypeHint=preserve";'>I have a PowerSchool ID</button>
+									</div>
+								</div>
+
+								
+							
+                            <!-- box content-->
+                        </form>
+                    </div>
+                    
+                    
+                    
+                    
+				</div>
+				
+			</div>
+			<div id="footer">
+				<div id="legal">
+					<p>
+						Copyright &copy; 2005-2023 PowerSchool Group LLC and/or its affiliate(s). All rights reserved.<br/>All trademarks are either owned or licensed by PowerSchool Group LLC and/or its affiliates.
+					</p>
+				</div>
+				<p id="pearsoncorplink">
+
+				</p>
+				<p id="powerschoolcorplink"><a href="https://www.powerschool.com/privacy/" target="_blank">Privacy Policy</a></p>
+			</div>
+		</div>
+
+		<div id="branding-pearson">
+			<div id="logo-pearson"></div>
+			<div id="tagline-pearson"></div>
+		</div>
+
+		<script src="/scripts/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+        <script src="/scripts/jquery-ui-1.13.2.custom.min.js"></script>
+		<script src="/admin/javascript/md5.js"></script>
+		<script src="/scripts/signin-scripts.js"></script>
+		<script>
+		//Hide or display the standard login fieldset
+			var hidelogin = 0;
+			var isLocalLogin = false;
+			
+
+			if(isLocalLogin) {
+				jQuery("#localLoginHeader").removeClass("hide");
+				jQuery("#btn-enter-next-div").removeClass("hide");
+				jQuery("#redirect_to_classroom").removeClass("hide");
+			} else {
+				jQuery("#normalHeader").removeClass("hide");
+				jQuery("#btn-enter-sign-in-div").removeClass("hide");
+				jQuery("#login-help").removeClass("hide");
+			}
+			if(hideLoginForm == 0 && hidelogin<=1) {
+				jQuery("#login_fieldset").removeClass("hide");
+			}
+			if($j('#loginTarget').length !== 0) {
+				var _studentHref = $j('#studentSignIn').attr("href");
+				var _parentHref = $j('#parentSignIn').attr("href");
+				var _loginHelpHref = $j('#loginHelpLink').attr("href");
+				if ($j('#loginTarget').val().includes("public/openid")) {
+					$j('#loginTarget').val($j('#loginTarget').val().replace("public/openid", "guardian/openid"));
+				}
+				var _loginTarget = encodeURIComponent($j('#loginTarget').val());
+				$j('#studentSignIn').attr("href", _studentHref + "&loginTarget=" + _loginTarget);
+				$j('#parentSignIn').attr("href", _parentHref + "&loginTarget=" + _loginTarget);
+				$j('#loginHelpLink').attr("href", _loginHelpHref + "?loginTarget=" + _loginTarget);
+        	}
+		</script>
+        
+	</body>
+</html>
