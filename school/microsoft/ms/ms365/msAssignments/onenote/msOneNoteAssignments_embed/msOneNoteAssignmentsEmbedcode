@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="ecs-flights" content="eyJyaW5nIjoiYmV0YSIsImVjcyI6eyJjb25maWd1cmF0aW9ucyI6eyJlbmFibGVCZW5jaG1hcmtfQXR0YWNobWVudHNXYXJuaW5nIjp0cnVlLCJlbmFibGVCZW5jaG1hcmtfRmlsZVBlcm1pc3Npb25zIjp0cnVlLCJwcnNyaWthbi02ODIwMjMtMiI6ZmFsc2UsImFhdGVzdDYiOmZhbHNlLCJlbmFibGVTcGVha2VyUHJvZ3Jlc3MiOmZhbHNlLCJjbGFzc3dvcmtSZXVzZVJlc3RyaWN0aW9ucyI6WyJPbmVOb3RlIiwiQ2hhbm5lbCJdLCJlbmFibGVTZW5kUmVtaW5kZXIiOnRydWUsImVuYWJsZUNsYXNzU2V0dGluZ3NfdjIiOiJ0cnVlIiwiZW5hYmxlQ2xhc3N3b3JrUmV1c2UiOnRydWUsImVuYWJsZVRhYmxlRWRpdGluZyI6dHJ1ZSwiZW5hYmxlRXh0ZW5kRHVlRGF0ZSI6dHJ1ZSwiZW5hYmxlUm9vc3RlckRhcmtNb2RlIjp0cnVlLCJ1c2VUZWFtc0VkaXRvckNvbG9ycyI6dHJ1ZSwidXNlTmV3UmVmbGVjdFNldHRpbmdOYW1lIjp0cnVlLCJlbmFibGVQZGZFZGl0Ijp0cnVlLCJlbmFibGVQZGZFZGl0T25UYWJsZXQiOnRydWUsImVuYWJsZUNsYXNzd29ya0ZyZSI6dHJ1ZSwiZW5hYmxlTXVsdGlBcHBTZXJ2aWNlV29ya2VyIjp0cnVlLCJlbmFibGVVc2VySm9pbmVkVGVhbXNDbGVhbnVwIjp0cnVlLCJkZWZlckNhY2hlV3JpdGVzVW50aWxSZWFkeSI6dHJ1ZSwiZW5hYmxlTXVsdGlDbGFzc0NoYW5uZWxzIjp0cnVlLCJlbmFibGVNdWx0aUNsYXNzRGF0ZXMiOnRydWUsImVuYWJsZU1vYmlsZU11bHRpQ2xhc3NDaGFubmVscyI6dHJ1ZSwiZW5hYmxlR3JhZGluZ1NjaGVtZXMiOnRydWUsImVuYWJsZVRva2VuU2VydmljZURlbGV0ZVByb21pc2VGaXgiOnRydWUsImVuYWJsZUNvbnRpbnVvdXNBY2Nlc3NFdmFsdWF0aW9uIjp0cnVlLCJlbmFibGVUb2tlblJlc291cmNlUmVxdWlyZWQiOnRydWUsImVuYWJsZUNhY2hlZFRva2VuUmV1c2UiOnRydWUsImVuYWJsZU1lV29ya0NvdW50ZXIiOmZhbHNlLCJlbmFibGVNYXJrVGltZW91dEV4cGVjdGVkIjp0cnVlLCJ3aGl0ZWJvYXJkRGV2U2V0dGluZ3MiOnsiZG9tYWluIjoiIiwicmluZ1FzcCI6InYyMy4xMDMwNi4xMDQiLCJ0ZW5hbnRzIjpbIjY4OTBlNWRjLThmZTUtNGMwOS1hMGJiLWExYTNhMjFjNmU0MyJdLCJ1cmxPdmVycmlkZSI6IiIsInVwZ3JhZGVXaGl0ZWJvYXJkUGFja2FnZXMiOnRydWV9LCJkZWxheUFwcEluaXRpYWxpemF0aW9uTXMiOjEwLCJkZWxheUFwcEluaXRpYWxpemF0aW9uUGxhdGZvcm1zIjpbImFuZHJvaWQiXSwicGVyc2lzdExvY2FsU3RvcmFnZSI6dHJ1ZSwiZW5hYmxlTm9Qb3B1cFNhbmRib3giOnRydWUsImVuYWJsZVJlc3RyaWN0aXZlU2FuZGJveCI6dHJ1ZSwiZW5hYmxlSWZyYW1lQ3NwIjpmYWxzZSwib3ZlcnJpZGVTdHJlYW1Mb2dnaW5nRW5kcG9pbnRVcmwiOiJodHRwczovL21vYmlsZS5ldmVudHMuZGF0YS5taWNyb3NvZnQuY29tL09uZUNvbGxlY3Rvci8xLjAvIiwiZW5hYmxlV2ViUmVjb3JkZXJQYWNrYWdlIjp0cnVlLCJlbmFibGVXZWJSZWNvcmRlckJldGFGZWF0dXJlcyI6ZmFsc2UsImVuYWJsZVdlYlJlY29yZGVyQWR2YW5jZWRSZWNvcmRpbmciOmZhbHNlLCJlbmFibGVXZWJSZWNvcmRlck92ZXJyaWRlcyI6dHJ1ZSwidGltZW91dENvbmZpZyI6eyJnZXRKb2luZWRUZWFtcyI6IjYwMCIsImdldFRlYW1zQ29udGV4dCI6IjYwMDAiLCJnZXRUZWFtc1Rva2VuIjoiMzAwMDAifSwidWlSaW5nIjoiQmV0YSJ9LCJjb25maWdJZHMiOlsiUC1YLTExNTI5NDUtMi0zLFAtWC0xMTUxMTY3LTItMyxQLVgtMTA5OTM2Ni0yLTksUC1YLTkxMTc0LTItMyxQLVItMTE2ODc0OS01LTYsUC1SLTExNjcxODYtMi0yLFAtUi0xMTY3MDgyLTItNCxQLVItMTE2MDM3MC0yLTQsUC1SLTExNjA2NjYtMi03LFAtUi0xMTYwMjc1LTItNCxQLVItMTE2MDMwNC0yLTMsUC1SLTExNjAyNzYtMi01LFAtUi0xMTU4MTI4LTItNSxQLVItMTE1NzIwNS0yLTQsUC1SLTExNTE3MDktMi04LFAtUi0xMTMzMDEzLTItNixQLVItMTEzMjkzMC0yLTcsUC1SLTExMjkzMjAtMi01LFAtUi0xMTI4NzUyLTItNixQLVItMTEyMDUyMy0yLTksUC1SLTExMTQ1ODMtMi0xMixQLVItMTExMzE1OC0yLTksUC1SLTExMDQ4MDEtMi03LFAtUi0xMDk0ODgzLTItNixQLVItMTA3NDg4NC0yLTksUC1SLTEwNzMyODAtMi04LFAtUi0xMDM5MjQ5LTItNyxQLVItMTAxOTQ1My0yLTE0LFAtRC0xMTEwNDIxLTItMixQLUQtNzQ5MTUtMi02LGVlZWEzMTE4OjQ2NTk4MixjMzVjaTc1Mjo0NjI3NjgsMmhmZ2gxMTA6NDE2OTc1LGgyZmIzMTU1OjExNzU3NiJdfX0=" />
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=" />
+    <title>Assignments</title>
+
+    <base href="https://res-1.cdn.office.net/eduassignmentsui/">
+    <link
+      as="font"
+      crossorigin="anonymous"
+      href="assets/fonts/segoeui-regular-final.woff2"
+      rel="preload"
+    />
+    <link
+      as="font"
+      crossorigin="anonymous"
+      href="assets/fonts/segoeui-semibold-final.woff2"
+      rel="preload"
+    />
+    <link
+      as="font"
+      crossorigin="anonymous"
+      href="assets/fonts/segoeui-semilight-final.woff2"
+      rel="preload"
+    />
+  <script defer src="runtime-728b479f58b0d45d4df5.js" crossorigin="anonymous"></script><script defer src="vendor-assignments-9ecbbc8d72289f9c58bf.js" crossorigin="anonymous"></script><script defer src="sdk-teams-assignments-264103b294f903c3780b.js" crossorigin="anonymous"></script><script defer src="fluent-ui-assignments-7f624ae8b9e1a1ba4f9b.js" crossorigin="anonymous"></script><script defer src="assignments-74a37bb9faeb5e61e0d6.js" crossorigin="anonymous"></script></head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      function openFrame(querystring) {
+        var iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = 'index-boot-logger.html' + querystring;
+        window.document.body.appendChild(iframe);
+      }
+      window.onerror = function (message, source, lineno, colno, error) {
+        const use1dsSdk = window.UIConfiguration && window.UIConfiguration.ecs && window.UIConfiguration.ecs.configurations && window.UIConfiguration.ecs.configurations.use1dsSdk === true;
+        // Send telemetry to the EU when the flag is true or undefined (undefined -> send to EU in case of ECS failure)
+        const isEUDB = window.UIConfiguration && window.UIConfiguration.ecs && window.UIConfiguration.ecs.configurations && window.UIConfiguration.ecs.configurations.isEMEATenant != false;
+        openFrame(
+          '?errorType=' +
+            encodeURIComponent(error && error.name) +
+            '&message=' +
+            encodeURIComponent(message) +
+            '&linno=' +
+            encodeURIComponent(lineno) +
+            '&colno=' +
+            encodeURIComponent(colno) +
+            '&filename=' +
+            encodeURIComponent(source) +
+            '&href=' +
+            encodeURIComponent(window.document.location.href) + 
+            '&isEUDB=' + 
+            encodeURIComponent(isEUDB)
+        );
+      };
+      window.msEduLoadTimeId = setTimeout(function () {
+        // Pass loaded chunks to the iframe via querystring until we can load the iframe in the same domain
+        const loadedChunks = window.msEduLoadTimes;
+        const shortFileNames = Object.keys(loadedChunks || {}).map(function (name) {
+          return name.split('-')[0];
+        });
+        const use1dsSdk = window.UIConfiguration && window.UIConfiguration.ecs && window.UIConfiguration.ecs.configurations && window.UIConfiguration.ecs.configurations.use1dsSdk === true;
+        const isEUDB = window.UIConfiguration && window.UIConfiguration.ecs && window.UIConfiguration.ecs.configurations && window.UIConfiguration.ecs.configurations.isEMEATenant != false;
+
+        openFrame(
+          '?errorType=timeout' +
+            '&message=' +
+            encodeURIComponent('BootTimeout') +
+            '&href=' +
+            encodeURIComponent(window.document.location.href) +
+            '&chunks=' +
+            encodeURIComponent(shortFileNames.sort().join(';')) + 
+            '&use1dsSdk=' + 
+            encodeURIComponent(use1dsSdk) +
+            '&isEUDB=' + 
+            encodeURIComponent(isEUDB)
+        );
+      }, 14500);
+      try {
+        const ecsFlights = window.document.querySelector('meta[name="ecs-flights"]').content;
+        if (ecsFlights && ecsFlights.indexOf('ECS-CONFIG-TEMP') !== 0) {
+          window.UIConfiguration = JSON.parse(window.atob(ecsFlights));
+        }
+      } catch (e) {
+        // Continue without inline flights
+      }
+    </script>
+    <!--CONFIGURATION-->
+  </body>
+</html>
