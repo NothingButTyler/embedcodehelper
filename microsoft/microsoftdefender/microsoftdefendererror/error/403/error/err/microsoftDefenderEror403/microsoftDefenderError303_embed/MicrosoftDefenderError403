@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Error during processing.</title>
+    <meta name="referrer" content="same-origin" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="icon" href="data:,">
+
+        <base href="https://nam10.safelinks.protection.outlook.com">
+
+    <link href="/Content/Scripts/safelinksv2.css" rel="stylesheet" />
+    <script src="/Content/Scripts/site.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="header_container_pending">
+        <div id="header">
+            <div id="icon"><img src="/Content/images/scanned.png" alt="" height="100" width="94"></div>
+            <h1 style="color:black">The page that you are trying to access cannot be loaded.</h1>
+        </div>
+    </div>
+    <div id="recommendation_container">
+        <div id="recommendation">
+            <h2>Due to an internal error, this web page could not be loaded. We recommend that you close this page.</h2>
+            <p id="text">Microsoft Defender for Office 365 has encountered an error.</p>
+            <button id="close" type="button" onclick="GoBack();">Go Back </button>
+            <p id="powered">Learn more about <a href="https://go.microsoft.com/fwlink/?linkid=866370">Microsoft Defender for Office 365</a></p>
+        </div>
+        <div id="diagnostics" style="display:none;">
+            <div>
+                CorrelationId:
+00000000-0000-0000-0000-000000000000            </div>
+            <div>
+                ClickId:
+4827d9a1-e46a-401d-08b8-08dc019a4cbd            </div>
+            <div>
+                MachineName:
+MW2NAM10WS051            </div>
+            <div>
+                DiagnosticInfo:
+VNy7XaQ5n7Gh9xAtztgYTbBD+zknyYTxCjc2gXa1A6gDhT0IJkZkmDkG5/SKcyQkWDtR1F/tmVkiKSHkE4mMYv1LXS0NggVftSmeU7+Oyzex1NPhatROqlmGt70vgvBd5XgaOOF75f6dTq5J8hn8HyR5g4ATUyEFTDy4Az1zIJOwE8AfdTTfsqImzBPpkWuPHFIQ/Jm7f5KXXr7OramWkGC5VtL+4VQAUnjGzfoZEvC3i48m8AB5LBQ4PCD7FlmjiysN3uSNa2upz1nggDyOZyoqTvLq26DM/WtpexZ3Dlggi6kCigAFhQyDV10TfngOp4VjLh29WLaAPGkgqGZodsVKTTS4jT99eomA1/fkpjf629hrWyp366zkLMwsWCs6/DGCcIrZ77UD/PRSYzGtFIzaC+Tqxu74L2j542ntkbLkHWMtw6fYdyqXJSoId0J8LftooglaOxDb9yr0KEL7zC5grJGJa6oaqJa0/mfV7RhKORMINuSPEyT0uDCNSmS9msRzaOgPSt/T1LQZbq9CnAjffibBNm0pofEFXrNqSsakkCPOH/J/ad47A05RDHtOhlwH49cjQVlHuWdkNoi6b3czPUx0w0FF+wwafjr09QPSgYVQbQCNu7EYoyTv9+aOLJF46DhO9IHqqSERSjJTiPeY0NHk/4bgIqCgWx72BT+7zI+NrJAkqQD6wkTT2c4dXfHqGPxigWbIXnfI5Xxy4Mt48/vs8xlE7YHV+hRcMb3zf1i3GMHZFoV4rmURqZPuHXew43CNxeg7cy+SvkszDDQ3COwA5fzRpNLnCdTXNqo=            </div>
+        </div>
+    </div>
+</body>
+
+</html>
