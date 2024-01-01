@@ -1,0 +1,179 @@
+Here is the main i>Stick Santa</i URL if the code does not work: https://wanted5games.com/games/html5/stick-santa-new-en-s-iga-cloud/index.html?pub=502
+Before adding, look at preview. If the code works, erase 1 and 2 (3 if optional).
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+        <title>Player</title>
+
+        <style type="text/css">
+            html, body {
+                overflow: hidden;
+                background: #000;
+            }
+
+            html, body, #cg-player, #advertisement, #outstreamContainer, #game {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            #advertisement {
+                position: absolute;
+                top: 0;
+                z-index: 9999;
+            }
+
+            #game {
+                display: none;
+                position: absolute;
+                top: 0;
+            }
+
+            #game-iframe {
+                display: block;
+                margin: 0 auto;
+            }
+
+            #splash {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row; /* works with row or column */
+                flex-direction: row;
+                -webkit-align-items: center;
+                align-items: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                flex-direction: column;
+
+                background: linear-gradient(#333, #000) repeat scroll 0% 0% transparent;
+
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                z-index: 9999;
+
+                display: none;
+            }
+
+            #splash button {
+                height: 10vh;
+                width: 30vw;
+                border: 0px;
+                color: #fff;
+                background: #FF961D;
+                padding: 11px 30px;
+                text-transform: uppercase;
+                font-size: 4vh;
+                display: inline-block;
+                border-radius: 10px;
+                font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+                margin-top:4vh;
+                line-height: 12px;
+                cursor: pointer;
+            }
+
+            @media (orientation: portrait) {
+                #splash button {
+                    width: 55vw;
+                    font-size: 3vh;
+                }
+            }
+
+            #splash img {
+                border-radius: 10px;
+                width: 30vh;
+            }
+
+            #splash h1 {
+                color: #fff;
+                font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+                font-weight:normal;
+                font-size: 1.2em;
+            }
+
+            #splash #poweredby {
+                font-family: Arial;
+                font-size: 10pt;
+                color: #999;
+                bottom: 15px;
+                left: 15px;
+                position: absolute;
+                text-decoration: none; z-index: 99999999;
+            }
+
+            #splash-gdpr{
+                font-family: Arial;
+                font-size: 8pt;
+                color: #fff;
+                text-align: center;
+                width: 50%;
+                padding-top:20px;
+            }
+
+            #splash-gdpr a {
+                color: #fff;
+            }
+
+            @media (orientation: portrait) {
+                #splash-gdpr{
+                    width: 80%;
+                    padding-top:40px;
+                }
+            }
+        </style>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137562670-3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-137562670-3', {
+              send_page_view: false,
+              'custom_map': {
+                  'dimension1': 'game',
+                  'dimension2': 'portal'
+              }
+          });
+        </script>
+    </head>
+    <body>
+        <div id="cg-player">
+            <div id="advertisement">
+                <div id="outstreamContainer"></div>
+            </div>
+            <div id="splash">
+                <img id="game-thumbnail" src=""/>
+
+                <h1 id="game-title">zBall 2</h1>
+
+                <button id="splash-play">Start Game</button>
+
+                <p id="splash-gdpr">By clicking on "Start Game", you automatically agree with our <a href="//wanted5games.com/privacy-policy" target="_blank">Privacy Policy</a> and to share your browsing and personal data with Wanted 5 Games B.V. including their analytics and advertising partners.</p>
+
+                <a href="http://wanted5games.com" id="poweredby" target="_blank">
+                    Games By Wanted 5 Games B.V.
+                </a>
+            </div>
+            <div id="game">
+                <iframe id="game-iframe" seamless="seamless" frameborder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen src=""></iframe>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/outstream.js"></script>
+        <script type="text/javascript" src="//cdn.wanted5games.com/api/player.js?v=1"></script>
+    </body>
+</html>
